@@ -5,6 +5,8 @@ metadata:
   name: kube-prometheus-stack-app
   namespace: argocd
 spec:
+  generators:
+    - clusters: {}
   project: default
   source:
     chart: kube-prometheus-stack
